@@ -43,3 +43,16 @@ ExpiresByType application/xhtml+xml "access plus 600 seconds"
 AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml application/xhtml+xml text/css text/javascript application/javascript application/x-javascript
 
 </ifModule>
+
+
+<ifModule mod_headers.c>
+ExpiresActive On
+
+<filesMatch ".(gif|png|jpg|jpeg|txt)$">
+Header set Cache-Control "max-age=1209600"
+</filesMatch>
+
+<filesMatch ".(css|js)$">
+Header set Cache-Control "max-age=86400"
+</filesMatch>
+</ifModule>
