@@ -12,6 +12,96 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
 	<meta property="og:image" content="path/to/image.jpg">
+	<style>
+		.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.arrow{
+	position: absolute;
+	bottom: 3%;
+	left: 50%;
+	font-size: 6rem;
+	color: #20464F;
+	cursor: pointer;
+	transform: rotateY(180deg);
+	@include backface-visibility(hidden);
+	transition: 0s ease;
+	animation: arrow 2s forwards;
+	animation-delay: 5s;
+}
+.parallax{
+	max-width: 100%;
+	height: 100%;
+	background-image: url("../img/bg-4.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+
+	.center{
+		position: absolute;
+		width: 70%;
+		text-align: center;
+		left: 15%;
+		top: 30%;	
+}
+		h3{
+			font-family: EgipetBold;
+			text-transform: uppercase;
+			font-size: 4rem;
+}
+		p{
+			font-family: AgoraSansProRegular;
+			color: #000000;
+		
+	}
+		.span{
+			height: 5px;
+			position: absolute;
+			border-radius: 5px;
+			background-color: #234044;
+			left: 1%;
+			animation: ion 5s ease forwards;
+			animation-delay: 1s	;
+}
+	.menu{
+		position: absolute;
+		top: -10px;
+		right: 5%;
+}
+		ul li{
+			cursor: pointer;
+			display: inline;
+			margin-left: 4rem;
+			text-transform: uppercase;
+			font-family: ACLineRegular;
+			font-weight: 100;
+			color: #000;
+			font-size: 2rem;
+}
+		ul li:hover{
+			color: white;
+			transition: 1s ease	;
+}
+	.title{
+		position: absolute;
+		top: 1px;
+		left: 50px;
+		font-size: 2.5rem;
+		text-transform: uppercase;
+		font-family: AnonymousProRegular;
+		cursor: pointer;
+		z-index: 99;
+	}
+		span{
+			color: #2A605F
+		}
+
+	</style>
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
