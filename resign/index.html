@@ -5,16 +5,21 @@
 
 	<meta charset="utf-8">
 
-	<title>Title</title>
+	<title>Resign</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
 	<meta property="og:image" content="path/to/image.jpg">
+	<style>
+.parallax{max-width:100%;height:100%;background-image:url(../img/bg-4.jpg);background-attachment:fixed;background-repeat:no-repeat;background-size:cover;position:relative}.parallax .center{position:absolute;width:70%;text-align:center;left:15%;top:30%}.parallax .center h3{font-family:EgipetBold;text-transform:uppercase;font-size:4rem}.parallax .center p{font-family:AgoraSansProRegular;color:#000}.parallax .center .span{height:5px;position:absolute;-webkit-border-radius:5px;border-radius:5px;background-color:#234044;left:1%;-webkit-animation:ion 5s ease forwards;animation:ion 5s ease forwards;-webkit-animation-delay:1s;animation-delay:1s}.parallax .menu{position:absolute;top:-10px;right:5%}.parallax .menu ul li{cursor:pointer;display:inline;margin-left:4rem;text-transform:uppercase;font-family:ACLineRegular;font-weight:100;color:#000;font-size:2rem}.parallax .menu ul li:hover{color:#fff;-webkit-transition:1s ease;transition:1s ease}.parallax .title{position:absolute;top:1px;left:50px;font-size:2.5rem;text-transform:uppercase;font-family:AnonymousProRegular;cursor:pointer;z-index:99}.parallax .title span{color:#2a605f}.parallax::before{content:" ";display:table;width:100%;height:100%}.arrow{position:absolute;bottom:3%;left:50%;font-size:6rem;color:#20464f;cursor:pointer;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:.5s ease;transition:.5s ease;-webkit-animation:arrow 2s forwards;animation:arrow 2s forwards;-webkit-animation-delay:5s;animation-delay:5s}.fa-bars{position:absolute;right:20px;top:10px;font-size:3rem!important;cursor:pointer;z-index:999}
+	</style>
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<!-- Chrome, Firefox OS and Opera -->
 	<meta name="theme-color" content="#000">
 	<!-- Windows Phone -->
@@ -22,8 +27,6 @@
 	<!-- iOS Safari -->
 	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 </head>
-		<link rel="stylesheet" href="css/main.min.css" property=stylesheet >
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 
 <body>
 <style>
@@ -70,6 +73,9 @@
 		to{width: 100%}
 	}	
 </style>
+<div class="scroll-top">
+	<i class="fa fa-angle-double-up" aria-hidden="true"></i>
+</div>
 <div class="parallax">
 	<div class="center">
 		<h3>Resign for your life</h3>
@@ -77,6 +83,7 @@
 		<span class="span"></span>
 	</div>
 	<div class="title">Re<span>si</span>gn</div>
+	<i id="bars" class="fa fa-bars" hidden aria-hidden="true"></i>
 	<div class="menu">
 		<ul>
 			<li class="home">Home</li>
@@ -89,7 +96,7 @@
 </div>
 	<div class="flex-container">
 		<div class="flex-row">
-			<div class="flex-item">
+			<div class="flex-item wow flip">
 				<img src="img/bg-10.jpg" alt="">
 				<h3>Hello Moto</h3>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet porro quae quasi temporibus qui facere enim earum voluptas ratione! Aspernatur nobis odio maiores velit et. Itaque, excepturi! Odit, magni reprehenderit magni reprehenderit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur voluptate culpa consequuntur, eos, magni debitis soluta odit possimus velit exercitationem recusandae ullam necessitatibus rem magnam commodi dolorem incidunt.</p>
@@ -118,7 +125,7 @@
 
 			<div class="plax-two">
 				<div class="hover-box-content"></div>
-										<div class="box-absolute">
+										<div class="box-absolute ">
 							<div class="h2">Use Resign and change your life</div>
 							<div class="button">SHOW ALL</div>
 						</div>
@@ -194,10 +201,13 @@
 	</div>
 			<span>ViterP</span>
 </footer>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" async></script>
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
 	<script>
 		$(document).ready(function(){
-
+			$("#bars").click(function() {
+				$(".menu").toggle("slow")
+			});
 $(".hover-box-content").hover(function(){
 				  $(".content-item").css("transform","rotateY(180deg)");
 				  $(".content-item").css("background","none");
@@ -210,7 +220,23 @@ $(".hover-box-content").hover(function(){
 			   },100);	
 $(".photo-div").click(function() {
 		$(this).css("transform","rotateY(360deg)")});})
+
+		$(".arrow i").click(function() {
+			$("body,html").animate({
+				scrollTop: 560}, 500);
+			});
+	
+	$(".scroll-top").click(function() {
+			$("body,html").animate({
+				scrollTop: 0}, 1000);
+			});
+	$(window).scroll(function () {
+		if ($(this).scrollTop()>300) {
+			$(".scroll-top").show()
+		}
+	})
 	</script>
+	<script src="js/scripts.min.js"></script>
 
 </body>
 </html>
