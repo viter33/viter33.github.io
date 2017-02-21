@@ -14,6 +14,7 @@
 	<meta property="og:image" content="path/to/image.jpg">
 	<style>
 .parallax{max-width:100%;height:100%;background-image:url(img/bg-4.jpg);background-attachment:fixed;background-repeat:no-repeat;background-size:cover;position:relative}.parallax .center{position:absolute;width:70%;text-align:center;left:15%;top:30%}.parallax .center h3{font-family:EgipetBold;text-transform:uppercase;font-size:4rem}.parallax .center p{font-family:AgoraSansProRegular;color:#000}.parallax .center .span{height:5px;position:absolute;-webkit-border-radius:5px;border-radius:5px;background-color:#234044;left:1%;-webkit-animation:ion 5s ease forwards;animation:ion 5s ease forwards;-webkit-animation-delay:1s;animation-delay:1s}.parallax .menu{position:absolute;top:-10px;right:5%}.parallax .menu ul li{cursor:pointer;display:inline;margin-left:4rem;text-transform:uppercase;font-family:ACLineRegular;font-weight:100;color:#000;font-size:2rem}.parallax .menu ul li:hover{color:#fff;-webkit-transition:1s ease;transition:1s ease}.parallax .title{position:absolute;top:1px;left:50px;font-size:2.5rem;text-transform:uppercase;font-family:AnonymousProRegular;cursor:pointer;z-index:99}.parallax .title span{color:#2a605f}.parallax::before{content:" ";display:table;width:100%;height:100%}.arrow{position:absolute;bottom:3%;left:50%;font-size:6rem;color:#20464f;cursor:pointer;-webkit-transform:rotateY(180deg);transform:rotateY(180deg);-webkit-backface-visibility:hidden;backface-visibility:hidden;-webkit-transition:.5s ease;transition:.5s ease;-webkit-animation:arrow 2s forwards;animation:arrow 2s forwards;-webkit-animation-delay:5s;animation-delay:5s}.fa-bars{position:absolute;right:20px;top:10px;font-size:3rem!important;cursor:pointer;z-index:999}
+@keyframes arrow{from{transform:rotateY(180deg)}to{transform:rotateY(0deg)}}@keyframes ion{from{width:0}to{width:98%}}@keyframes im{from{padding:5px}to{padding:0}}@keyframes bor{from{border:0 solid #296871}to{border:5px solid #296871}}@keyframes loen{from{width:1%}to{width:100%;left:0}}@keyframes plaxa{from{height:0}to{height:100%}}@keyframes bora{from{border:2px solid #D4C8C6}to{border:none}}@keyframes plaxb{from{width:0}to{width:100%}}@keyframes plaxc{from{height:0}to{height:100%}}@keyframes plaxd{from{width:0}to{width:100%}}
 	</style>
 	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
@@ -159,40 +160,6 @@
 </footer>
 	<link rel="stylesheet" href="css/main.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-	<script>
-		$(document).ready(function(){
-			$("#bars").click(function() {
-				$(".menu").toggle("slow")
-			});
-$(".hover-box-content").hover(function(){
-				  $(".content-item").css("transform","rotateY(180deg)");
-				  $(".content-item").css("background","none");
-				  $(".box-absolute").css("transform","rotateY(0deg)");
-
-			   },function(){
-				    $(".content-item").css("transform","rotateY(0deg)")				   
-				    $(".box-absolute").css("transform","rotateY(180deg)")	
-				     $(".content-item").css("background","#21545C");			   
-			   },100);	
-$(".photo-div").click(function() {
-		$(this).css("transform","rotateY(360deg)")});})
-
-		$(".arrow i").click(function() {
-			$("body,html").animate({
-				scrollTop: 560}, 500);
-			});
-	
-	$(".scroll-top").click(function() {
-			$("body,html").animate({
-				scrollTop: 0}, 1000);
-			});
-	$(window).scroll(function () {
-		if ($(this).scrollTop()>300) {
-			$(".scroll-top").show()
-		}
-	})
-	</script>
 	<script src="js/scripts.min.js"></script>
-
 </body>
 </html>
