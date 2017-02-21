@@ -7,13 +7,98 @@
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px) {
-
+.content{
+		flex-basis: 50% !important;
+	}
+.content-3{
+		width: 80px !important;
+		margin-bottom: 0;
+		top: 0%	;
+	}
+.photo-item{
+		flex-basis:	25%;
+	}
+	
+.photo-div3{
+		left: 50%;	
+		margin-left: -220px;
+		top: 33%;
+		}
+.photo-div{
+		width: 50% !important;
+	}
+.photo-div:hover{
+		padding: 35px !important;
+	}
+.photo-item{
+		flex-basis:	50% !important;	
+	}
 }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
 	
-	/*Disable Animation on Mobile Devices*/
+	footer span{
+		top:3px;
+	}
+	.arrow i{
+		display:none;
+	}
+	.div-img-content{
+		height:auto;
+	}
+	.plax-two {
+    	height:auto;
+	}
+	.container-task{
+		height:auto;
+	}
+	.photo-div{
+		width: 100% !important;
+		position: relative !important;
+		background: rgba(33, 83, 91, .4) !important;
+		left: 0 !important;
+		top: 0 !important;
+		right: 0;
+		bottom: 0;
+		margin-left: 0 !important;
+		margin-bottom: 2%;
+	}
+	.photo-div:hover{
+		border-radius: 0% !important;
+		background: rgba(33, 83, 91, 1) !important;
+	}
+	.content{
+	    flex-basis: 100% !important;
+	}
+	.div-img-content .content p {
+    	position: relative;
+	}
+
+	#lorem-3:hover{
+		margin-top: 0px;
+	}
+
+	#bars{
+		display: block; 
+	}
+
+	.box-absolute{
+		width: 100%;
+		top: 0% ;
+		left: 0;
+		margin-left: 0px;
+	}
+	.menu {
+		top: 20px !important;
+		text-align: center;
+		width: 100%;
+		right: 0 !important;
+		display: none;
+	}
+	.main ul{
+			padding: 0;		
+		}
 	.animated {
 		/*CSS transitions*/
 		-o-transition-property: none !important;
@@ -39,9 +124,48 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
-
+.footer-down,.footer-soccial{
+		width: 100% !important;
+		margin-left: -50% !important;
+	}
+	footer .footer-soccial i{
+    	margin-left: 1%;
+	}
+	.box-absolute{
+		top: 10% 
+	}
+	.center{
+		top: 20% !important;
+	}
+		.photo-ref-4,.photo-ref-5,.photo-ref-6{
+		display: none
+	}
+	.photo-item{
+		flex-basis:	100% !important;
+	}
+	.photo-div4,.photo-div5{
+		display: none	
+	}
 }
-
+@media only screen and (max-width : 800px){
+	.box-absolute{
+		width: 100% !important;
+		height: 100% !important;
+		top: 1%;
+		margin-left: 0;
+		left: 0;
+		}		
+	.hover-box-content{
+		width: 100% !important;
+		height: 100% !important;
+		top: 1%;
+		margin-left: 0;
+		left: 0;
+	}
+	.box-content .content-item{
+		flex-basis: 100% !important
+	}
+		}
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
 
@@ -62,7 +186,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (min-width : 768px) {
-
+	.menu{
+		display: block !important
+	}
 }
 
 /* Medium Devices, Desktops */
