@@ -1,0 +1,93 @@
+@font-face {
+	font-family: "RobotoRegular";
+	src: url("fonts/RobotoRegular/RobotoRegular.eot");
+	src: url("fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"),
+			 url("fonts/RobotoRegular/RobotoRegular.woff") format("woff"),
+			 url("fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+	font-style: normal;
+	font-weight: normal;
+}
+/* font-family: "ACLineRegular"; */
+@font-face {
+    font-family: "ACLineRegular";
+    src: url("fonts/ACLineRegular/ACLineRegular.eot");
+    src: url("fonts/ACLineRegular/ACLineRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/ACLineRegular/ACLineRegular.woff") format("woff"),
+    url("fonts/ACLineRegular/ACLineRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "AgoraSansProRegular"; */
+@font-face {
+    font-family: "AgoraSansProRegular";
+    src: url("fonts/AgoraSansProRegular/AgoraSansProRegular.eot");
+    src: url("fonts/AgoraSansProRegular/AgoraSansProRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AgoraSansProRegular/AgoraSansProRegular.woff") format("woff"),
+    url("fonts/AgoraSansProRegular/AgoraSansProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "AmericanTextCRegular";
+    src: url("fonts/AmericanTextCRegular/AmericanTextCRegular.eot");
+    src: url("fonts/AmericanTextCRegular/AmericanTextCRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/AmericanTextCRegular/AmericanTextCRegular.woff") format("woff"),
+    url("fonts/AmericanTextCRegular/AmericanTextCRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "BarkentinaRegular";
+    src: url("fonts/BarkentinaRegular/BarkentinaRegular.eot");
+    src: url("fonts/BarkentinaRegular/BarkentinaRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/BarkentinaRegular/BarkentinaRegular.woff") format("woff"),
+    url("fonts/BarkentinaRegular/BarkentinaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CaviarDreamsRegular";
+    src: url("fonts/CaviarDreamsRegular/CaviarDreamsRegular.eot");
+    src: url("fonts/CaviarDreamsRegular/CaviarDreamsRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/CaviarDreamsRegular/CaviarDreamsRegular.woff") format("woff"),
+    url("fonts/CaviarDreamsRegular/CaviarDreamsRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "CocaColaRegular";
+    src: url("fonts/CocaColaRegular/CocaColaRegular.eot");
+    src: url("fonts/CocaColaRegular/CocaColaRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/CocaColaRegular/CocaColaRegular.woff") format("woff"),
+    url("fonts/CocaColaRegular/CocaColaRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "EgipetBold";
+    src: url("fonts/EgipetBold/EgipetBold.eot");
+    src: url("fonts/EgipetBold/EgipetBold.eot?#iefix")format("embedded-opentype"),
+    url("fonts/EgipetBold/EgipetBold.woff") format("woff"),
+    url("fonts/EgipetBold/EgipetBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "FortunaGothicRegular";
+    src: url("fonts/FortunaGothicRegular/FortunaGothicRegular.eot");
+    src: url("fonts/FortunaGothicRegular/FortunaGothicRegular.eot?#iefix")format("embedded-opentype"),
+    url("fonts/FortunaGothicRegular/FortunaGothicRegular.woff") format("woff"),
+    url("fonts/FortunaGothicRegular/FortunaGothicRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "SlabsThin";
+    src: url("fonts/SlabsThin/SlabsThin.eot");
+    src: url("fonts/SlabsThin/SlabsThin.eot?#iefix")format("embedded-opentype"),
+    url("fonts/SlabsThin/SlabsThin.woff") format("woff"),
+    url("fonts/SlabsThin/SlabsThin.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
