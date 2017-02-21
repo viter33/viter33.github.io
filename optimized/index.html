@@ -21,7 +21,6 @@
 	
 	<!-- Load CSS Compilled without JS -->
 	<noscript><link rel="stylesheet" href="compiled.min.css"></noscript>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 	<noscript><link rel="stylesheet" href="_media.css"></noscript>
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -176,12 +175,11 @@
 
 	<!-- Load CSS -->
 	<script>
-		// function loadCSS(hf) {
-		// 	var ms=document.createElement("link");ms.rel="stylesheet";
-		// 	ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
-		// }
-		// loadCSS("libs/animate/animate.css"); //Load Libs CSS: Animate CSS
-		// loadCSS("libs/font-awesome/css/font-awesome.min.css"); //Load Libs CSS: Animate CSS
+		function loadCSS(hf) {
+			var ms=document.createElement("link");ms.rel="stylesheet";
+			ms.href=hf;document.getElementsByTagName("head")[0].appendChild(ms);
+		}
+		loadCSS("libs/font-awesome/css/font-awesome.min.css"); //Load Libs CSS: Animate CSS
 		// loadCSS("_header.css");              //Header Styles (compress & paste to header after release)
 		// loadCSS("_main.css");                //User Styles: Main
 		// loadCSS("_media.css");               //User Styles: Media
