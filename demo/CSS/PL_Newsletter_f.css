@@ -1,0 +1,310 @@
+@charset "utf-8";
+	.NormalCharacterStyle5
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle8
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.NewsletterBodyBildLINK
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBildLINK2
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle12
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.NormalCharacterStyle9
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle7
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle11
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	line-height : 20px;
+	text-transform : uppercase;
+	color : #02A1DC;
+	color : rgb(2, 161, 220);
+}
+.NewsletterBodyBold
+{
+	font-family : Lato;
+	font-weight : bold;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBildLINK4
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBoldCapsLiteBlue
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBold1
+{
+	font-family : Lato;
+	font-weight : bold;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBildLINK3
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterBodyBildLINK1
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle10
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.NormalCharacterStyle4
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.NormalCharacterStyle6
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.Newsletterbody2
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.Newsletterbody
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NewsletterH1
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.Newsletterbody1
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.x2A_Over_-_Search
+{
+	background-image : url(x2A_Over_-_Search.png);
+	background-repeat : no-repeat;
+}
+.x2A_Click_-_Search
+{
+	background-image : url(x2A_Click_-_Search.png);
+	background-repeat : no-repeat;
+}
+.Header_-_Background_4_
+{
+	background-image : url(Header_-_Background_4_.png);
+	background-repeat : no-repeat;
+}
+.image
+{
+	background-image : url(image.png);
+	background-repeat : no-repeat;
+}
+.image1
+{
+	background-image : url(image1.png);
+	background-repeat : no-repeat;
+}
+.image5
+{
+	background-image : url(image5.png);
+	background-repeat : no-repeat;
+}
+.image3
+{
+	background-image : url(image3.png);
+	background-repeat : no-repeat;
+}
+.PL_Logo_3_
+{
+	background-image : url(PL_Logo_3_.png);
+	background-repeat : no-repeat;
+}
+.image2
+{
+	background-image : url(image2.png);
+	background-repeat : no-repeat;
+}
+.image6
+{
+	background-image : url(image6.png);
+	background-repeat : no-repeat;
+}
+.image4
+{
+	background-image : url(image4.png);
+	background-repeat : no-repeat;
+}
+.image7
+{
+	background-image : url(image7.png);
+	background-repeat : no-repeat;
+}
+.image9
+{
+	background-image : url(image9.png);
+	background-repeat : no-repeat;
+}
+.image8
+{
+	background-image : url(image8.png);
+	background-repeat : no-repeat;
+}
+.image10
+{
+	background-image : url(image10.png);
+	background-repeat : no-repeat;
+}
+.NormalCharacterStyle3
+{
+	font-family : Lato;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle1
+{
+	font-family : Open Sans Condensed;
+	font-weight : bold;
+	font-size : 34px;
+	line-height : 34px;
+	text-transform : uppercase;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77);
+}
+.NormalCharacterStyle
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
+.NormalCharacterStyle2
+{
+	font-family : Myriad Pro;
+	font-size : 15px;
+	line-height : 20px;
+	color : #4D4D4D;
+	color : rgb(77, 77, 77); 
+	text-decoration : underline;
+}
