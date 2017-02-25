@@ -142,9 +142,13 @@ text-transform: uppercase;
 padding: 4px 3px;
 }
 .flex-item img{
-border: 10px #379BC9 solid;
 padding: 5px;
 border-radius: 50%;
+margin-top: 30px;
+position: relative;
+top: 3px;
+width: 72px;
+padding: 10px !important;
 }
 @media screen and (max-width: 560px) {
 	.item2{
@@ -161,4 +165,16 @@ article:before{
 	width: 100% !important;
 	height: 100% !important;
 	position: absolute !important;
+}
+#item1,#item3{
+	background-color: #C5D345 !important;
+}
+#item2 img{
+	background-color: #FED04F;
+}
+#item2{
+	background-color: #597E95 !important;
+}
+#item4{
+	background-color: #5F5F5F !important;
 }
