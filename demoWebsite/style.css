@@ -88,8 +88,8 @@ position: relative;
 .content p{
 }
 .big{
-	font-size: 4rem;
-	line-height: 10px;
+	font-size: 4rem !important;
+	line-height: 10px !important;
 }
 .content button{
 	border: 0;
