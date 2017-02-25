@@ -11,10 +11,10 @@ nav{
 }
 .right{
 	position: absolute;
-	right: 10px;
-top: 24px;
-color: #fff;
-font-size: 2rem;
+	right: 10px !important;
+top: 24px !important;
+color: #fff !important;
+font-size: 2rem !important;
 }
 .center{
 	position: absolute;;
