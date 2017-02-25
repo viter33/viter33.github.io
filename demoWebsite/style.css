@@ -17,14 +17,9 @@ color: #fff !important;
 font-size: 2rem !important;
 }
 .center{
-	position: absolute;;
-	width: 200px;
+	position: absolute;
 	color: white;
-	margin-left: -100px;
-	left: 50%;
-	height: 93px;
 	top: 5px;
-	text-align: center;
 	font-size: 1.4rem;
 }
 nav .div{
@@ -84,7 +79,9 @@ position: relative;
 	position: absolute;
 	color: #ffffff;
 	text-align: center;
-	padding: 0 265px
+width: 768px;
+left: 50%;
+margin-left: -384px;
 }
 .content p{
 }
@@ -158,6 +155,24 @@ padding: 10px !important;
 		-o-order: -1;
 		order: -1;	}
 }
+@media screen and (max-width: 768px) {
+	.content{
+		width: 100%;
+		left: 0;
+		margin-left: 0;
+	}
+	.center{
+		right: 34px !important;
+		text-align: center;
+	}
+	.square{
+		text-align: right;
+	}
+	.right{
+		display: none;
+	}
+}
+
 article:before{
 	content: "" !important;
 	background-color: black !important;
