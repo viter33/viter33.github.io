@@ -1,0 +1,2961 @@
+@charset "UTF-8";
+/*!
+ * by Archive Studio
+ * http://archivestudio.co.uk
+ */
+/**
+ * Config
+ */
+/**
+ * Settings
+ *
+ * Core defaults
+ */
+/**
+ * Base
+ */
+/**
+ * Text sizes
+ */
+/**
+ * Line heights
+ */
+/**
+ * Grid Spacing
+ */
+/**
+ * Breakpoints
+ *
+ * Hold our breakpoint aliases and conditions in a list. These can be invoked
+ * later on via the `respond-to()` mixin found in _mixins.scss.
+ */
+/**
+ * Settings
+ *
+ * Extend `_defaults.scss` from the core and define global settings.
+ */
+/**
+ * Fonts
+ */
+/**
+ * Droid Sans Mono
+ *
+ * Using @font-face
+ */
+/**
+ * Regular
+ */
+@font-face {
+  font-family: 'droid-sans-mono';
+  src: url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.eot");
+  src: url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.eot?#iefix") format("embedded-opentype"), url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.woff2") format("woff2"), url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.woff") format("woff"), url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.ttf") format("truetype"), url("/_core/fonts/droid-sans-mono/droidsansmono-webfont.svg#droid_sans_monoregular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/**
+ * Social Circle
+ *
+ * Using @font-face
+ */
+/**
+ * Regular
+ */
+@font-face {
+  font-family: 'ss-social-circle';
+  src: url("/_core/fonts/ss-social-circle/SSSocialCircle.eot?#iefix") format("embedded-opentype"), url("/_core/fonts/ss-social-circle/SSSocialCircle.otf") format("opentype"), url("/_core/fonts/ss-social-circle/SSSocialCircle.woff") format("woff"), url("/_core/fonts/ss-social-circle/SSSocialCircle.ttf") format("truetype"), url("SSSocialCircle.svg#SSSocialCircle") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "ss-social-regular";
+  src: url("/_core/fonts/ss-social-regular/ss-social-regular.eot");
+  src: url("/_core/fonts/ss-social-regular/ss-social-regular.eot?#iefix") format("embedded-opentype"), url("/_core/fonts/ss-social-regular/ss-social-regular.woff") format("woff"), url("/_core/fonts/ss-social-regular/ss-social-regular.ttf") format("truetype"), url("/_core/fonts/ss-social-regular/ss-social-regular.svg#SSSocialRegular") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+/* No files to import found in ../fonts/**\/* */
+/**
+* Import the core
+*/
+/**
+ * Tools
+ */
+/**
+ * Font size mixin
+ *
+ * This will generate a rem-based font-size with its pixel fallback.
+ *
+ * @include font-size(12px);
+ */
+/**
+ * Media query mixin
+ *
+ * A simple mixin to quickly generate whole media queries from the aliases and
+ * conditions defined in `_settings.scss`.
+ *
+ * @include respond-to(mobile) { ... }
+ */
+/**
+ * Ceaser cubic bezier’s easing animations
+ *
+ * Based on: http://matthewlein.com/ceaser
+ */
+/**
+ * Cubic
+ */
+/**
+ * Circ
+ */
+/**
+ * Expo
+ */
+/**
+ * Quad
+ */
+/**
+ * Quart
+ */
+/**
+ * Quint
+ */
+/**
+ * Sine
+ */
+/**
+ * Back
+ */
+/**
+ * Base
+ */
+/*! normalize.css v3.0.1 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */ }
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0; }
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11 and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none; }
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background: transparent; }
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0; }
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted; }
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic; }
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000; }
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  top: -0.5em; }
+
+sub {
+  bottom: -0.25em; }
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0; }
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px; }
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  box-sizing: content-box;
+  height: 0; }
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto; }
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em; }
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */ }
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible; }
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none; }
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */ }
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default; }
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0; }
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal; }
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  /* 2 */
+  box-sizing: content-box; }
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em; }
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */ }
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto; }
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold; }
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+td,
+th {
+  padding: 0; }
+
+/**
+ * Set the global `box-sizing` state to `border-box`.
+ *
+ * css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice
+ * paulirish.com/2012/box-sizing-border-box-ftw
+ */
+html {
+  box-sizing: border-box; }
+
+*, *:before, *:after {
+  box-sizing: inherit; }
+
+/**
+ * Text utilities
+ *
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+h1 {
+  font-size: 32px;
+  font-size: 2.2857142857rem;
+  line-height: 1.3; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.7142857143rem;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 16px;
+  font-size: 1.1428571429rem;
+  line-height: 1.3; }
+
+h4 {
+  font-size: 12px;
+  font-size: 0.8571428571rem;
+  line-height: 1.2; }
+
+h5 {
+  font-size: 10px;
+  font-size: 0.7142857143rem;
+  line-height: 1.2; }
+
+h6 {
+  font-size: 10px;
+  font-size: 0.7142857143rem;
+  line-height: 1.2; }
+
+/**
+ * A thin layer on top of normalize.css that provides a starting point more
+ * suitable for web applications. Removes the default spacing and border for
+ * appropriate elements.
+ */
+/**
+ * High, page-level styling.
+ *
+ * 1. Set the default font-family, `font-size` and `line-height` for the entire project,
+ *    sourced from our default variables. The `font-size` is calculated to exist
+ *    in ems, the `line-height` is calculated to exist unitlessly.
+ * 2. Force scrollbars to always be visible to prevent awkward ‘jumps’ when
+ *    navigating between pages that do/do not have enough content to produce
+ *    scrollbars naturally.
+ * 3. Ensure the page always fills at least the entire height of the viewport.
+ * 4. Fonts on OSX will look more consistent with other systems that do not
+ *    render text using sub-pixel anti-aliasing.
+ */
+html {
+  font-family: "Helvetica", Arial, sans-serif;
+  /* 1 */
+  font-size: 0.875em;
+  /* 1 */
+  line-height: 1.2142857143;
+  /* 1 */
+  background: #FFF;
+  color: #000;
+  overflow-y: scroll;
+  /* 2 */
+  min-height: 100%;
+  /* 3 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 4 */
+  -webkit-font-smoothing: antialiased;
+  /* 4 */
+  -webkit-tap-highlight-color: transparent; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  -webkit-transition: color 0.2s ease;
+          transition: color 0.2s ease; }
+
+a:hover,
+a:focus,
+a:active {
+  color: #666; }
+
+blockquote,
+dl,
+dd,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+figure,
+p,
+pre {
+  margin: 0; }
+
+button {
+  background: transparent;
+  border: 0;
+  padding: 0; }
+
+/**
+ * Work around a Firefox/IE bug where the transparent `button` background
+ * results in a loss of the default `button` focus styles.
+ */
+button:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color; }
+
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+iframe {
+  border: 0; }
+
+ol,
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+/**
+ * Suppress the focus outline on links that cannot be accessed via keyboard.
+ * This prevents an unwanted focus outline from appearing around elements that
+ * might still respond to pointer events.
+ */
+[tabindex="-1"]:focus {
+  outline: none !important; }
+
+/**
+ * Emboldened elements
+ */
+b,
+strong {
+  font-weight: normal;
+  font-family: "Helvetica", Arial, sans-serif; }
+
+/**
+ * Address
+ */
+address {
+  font-style: normal; }
+
+/**
+ * Selection
+ */
+::-moz-selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFF;
+  text-shadow: none; }
+::selection {
+  background-color: rgba(0, 0, 0, 0.75);
+  color: #FFF;
+  text-shadow: none; }
+
+/**
+ * 1. Fluid images for responsive purposes.
+ * 2. Offset `alt` text from surrounding copy.
+ * 3. Setting `vertical-align` removes the whitespace that appears under `img`
+ *    elements when they are dropped into a page as-is. Safer alternative to
+ *    using `display: block;`.
+ */
+img {
+  max-width: 100%;
+  /* 1 */
+  font-style: italic;
+  /* 2 */
+  vertical-align: middle;
+  /* 3 */ }
+
+/**
+ * If a `width` and/or `height` attribute have been explicitly defined, let’s
+ * not make the image fluid.
+ */
+img[width],
+img[height] {
+  max-width: none; }
+
+/**
+ * Text inputs
+ */
+input,
+textarea {
+  outline: none;
+  border: 0;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0; }
+
+input[type="search"] {
+  box-sizing: inherit; }
+
+::-webkit-input-placeholder {
+  color: #787878; }
+
+/**
+ * Headings 1–6, extend text utilities
+ */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal; }
+
+/*
+*******
+
+NOTICE:
+
+You need to add this to your style.scss instead: (after it imports the core @ line 39)
+
+@import '../../_core/sass/utils/*'; 
+@import '../../_core/sass/components/*'; 
+
+********
+*/
+/**
+ * Utilities
+ */
+/**
+* Themes
+*/
+/**
+ * Core Components
+ */
+/**
+ * Core block system
+ */
+/**
+ * Block
+ *
+ */
+/**
+ * Core Cell system
+ */
+/**
+ * Cell
+ *
+ * 1. Make the same size as the relative parent
+ * 2. Center it
+ * 3. Make it relative so children can borrow its height
+ * 4. Add pseudo element so that theblcok content can sit in the vertical middle (hack to give height to an unknown area)
+ */
+.Dialog, .Overlay, .Overlay-page {
+  display: block;
+  /* 1 */
+  width: 100%;
+  /* 1 */
+  height: 100%;
+  /* 1 */
+  margin-left: auto;
+  /* 2 */
+  margin-right: auto;
+  /* 2 */
+  position: relative;
+  /* 3 */ }
+  .Dialog:before, .Overlay:before, .Overlay-page:before {
+    /* 4 */
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+    /* Old way */
+    margin-right: -0.25em;
+    /* Adjusts for spacing */
+    /* New Way */
+    width: 1px;
+    margin-left: -1px;
+    margin-right: 0; }
+
+/**
+ * cell body
+ *
+ * 1. Display as inline-cell so that we can position it with vertical align middle
+ * 2. Make as wide as the parent by default
+ */
+.Dialog-body, .Overlay-body {
+  display: inline-block;
+  /* 1 */
+  vertical-align: middle;
+  /* 1 */
+  width: 100%;
+  /* 2 */ }
+
+/**
+ * Contain floats
+ *
+ * Make an element expand to contain floated children.
+ * Uses pseudo-elements (micro clearfix).
+ *
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of the
+ *    element.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+/** @define Container */
+/**
+ * Container has auto side margins and max width in line with the base settings
+ */
+.Overlay-content {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1400px;
+  padding-left: 10px;
+  padding-right: 10px; }
+
+/**
+ * Display-type utilities
+ */
+/**
+ * Completely remove from the flow but leave available to screen readers.
+ */
+/**
+ * Core grid system
+ */
+/**
+ * Grid container
+ *
+ * 1. Account for browser defaults of elements that might be the root node of
+ *    the component.
+ * 2. Ensure consistent default alignment.
+ * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ */
+.Content-group, .Content, .Overlay-head {
+  display: block;
+  /* 1 */
+  margin: 0;
+  /* 1 */
+  padding: 0;
+  /* 1 */
+  text-align: left;
+  /* 2 */
+  margin-left: -10px;
+  /* 3 */ }
+
+/**
+ * Grid item
+ *
+ * 1. Fundamentals of the non-float grid layout.
+ * 2. Space columns apart.
+ * 3. Keeps content correctly aligned with the grid direction.
+ * 4. Controls vertical positioning of units.
+ * 5. Make cells full-width by default.
+ */
+.Content-group .Content-item, .Content .Content-section, .Overlay-head .Overlay-listItem {
+  display: inline-block;
+  /* 1 */
+  margin: 0;
+  padding-left: 10px;
+  /* 2 */
+  text-align: left;
+  /* 3 */
+  vertical-align: top;
+  /* 4 */
+  width: 100%;
+  /* 5 */ }
+
+/**
+ * Core list system
+ */
+/**
+ * List
+ *
+ */
+/**
+ * Core overlay system
+ */
+/**
+ * Overlay container
+ *
+ * 1. Make the same size as the relative parent
+ * 2. Position it over the parent
+ * 3. Apply a negative `margin-left` to negate the columns’ gutters.
+ */
+/**
+ * Overlay item
+ *
+ * 1. Display as table so that we can control vertical positioning of content
+ * 2. Make as big as the parent
+ */
+/**
+ * Overlay content
+ *
+ * 1. Display as table-cell so that we inherit vertical positioning of content
+ * 2. Make as big as the parent
+ */
+/**
+ * Overlay content
+ *
+ * 1. Display as table-cell so that we inherit vertical positioning of content
+ * 2. Make as big as the parent
+ */
+.Overlay-page {
+  overflow: hidden;
+  overflow-y: auto; }
+  .touch .Overlay-page {
+    overflow-y: scroll;
+    /* has to be scroll, not auto */
+    -webkit-overflow-scrolling: touch; }
+
+/**
+ * Text utilities
+ *
+ * As per: csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+ */
+h1 {
+  font-size: 32px;
+  font-size: 2.2857142857rem;
+  line-height: 1.3; }
+
+h2 {
+  font-size: 24px;
+  font-size: 1.7142857143rem;
+  line-height: 1.3; }
+
+h3 {
+  font-size: 16px;
+  font-size: 1.1428571429rem;
+  line-height: 1.3; }
+
+h4 {
+  font-size: 12px;
+  font-size: 0.8571428571rem;
+  line-height: 1.2; }
+
+h5 {
+  font-size: 10px;
+  font-size: 0.7142857143rem;
+  line-height: 1.2; }
+
+h6 {
+  font-size: 10px;
+  font-size: 0.7142857143rem;
+  line-height: 1.2; }
+
+/** @define Calendar */
+/**
+* TODO: Make silent & extendable
+*/
+.Calendar table {
+  width: 100%;
+  table-layout: fixed; }
+.Calendar td {
+  vertical-align: top;
+  text-align: center; }
+
+.Calendar-head {
+  text-align: center; }
+
+.Calendar-title {
+  display: inline-block; }
+
+.Calendar-arrow {
+  width: 30px;
+  height: 30px; }
+
+/**
+ * Modifier: large calendar
+ */
+.Calendar--alpha td {
+  border: 1px solid #000;
+  text-align: left; }
+.Calendar--alpha .Calendar-item {
+  position: relative;
+  padding-bottom: 100%;
+  height: 0; }
+
+/** @define Checkbox */
+/**
+ * CSS3 checkbox with graceful fallback.
+ *
+ * Based on: http://www.paulund.co.uk/style-checkboxes-with-css
+ */
+/**
+* TODO: Make silent & extendable
+*/
+.Checkbox {
+  position: relative; }
+  @media (max-width: 745px) {
+    .Checkbox {
+      padding-top: 2px; } }
+
+.Checkbox input[type=checkbox],
+.Checkbox input[type=radio] {
+  visibility: hidden;
+  width: 20px;
+  height: 20px; }
+
+.Checkbox span {
+  vertical-align: top;
+  padding-left: 6px; }
+  @media (max-width: 745px) {
+    .Checkbox span {
+      font-size: 12px;
+      font-size: 0.8571428571rem; } }
+
+/**
+ * Create the box for the checkbox
+ */
+.Checkbox label {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #f1f1f1;
+  border: 1px solid #e3e3e3;
+  cursor: pointer; }
+
+/**
+ * Display the tick inside the checkbox
+ */
+.Checkbox label:after {
+  content: "";
+  width: 9px;
+  height: 5px;
+  position: absolute;
+  top: 6px;
+  left: 5px;
+  background: transparent;
+  border: 2px solid #000;
+  border-top: none;
+  border-right: none;
+  opacity: 0.1;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+/**
+ * Create the hover event of the tick
+ */
+.Checkbox label:hover:after {
+  opacity: 0.5; }
+
+/**
+ * Create the checkbox state for the tick
+ */
+.Checkbox input[type=checkbox]:checked + label:after,
+.Checkbox input[type=radio]:checked + label:after {
+  opacity: 1; }
+
+/*
+
+@define .Content
+- Basic defaults for content formatting & appearance (spacing, layout etc)
+
+*/
+.Content {
+  position: relative;
+  /* Headings and paragraphs have base margin below */ }
+  .Content h1, .Content h2, .Content h3, .Content h4 {
+    margin-bottom: 10px; }
+  .Content p {
+    margin-bottom: 10px; }
+    .Content p:last-child {
+      margin-bottom: 0; }
+  .Content h1 {
+    font-size: 32px;
+    font-size: 2.2857142857rem; }
+  .Content h2 {
+    font-size: 24px;
+    font-size: 1.7142857143rem; }
+  .Content h3 {
+    font-size: 16px;
+    font-size: 1.1428571429rem; }
+  .Content h4, .Content p, .Content ul, .Content form, .Content input, .Content textarea {
+    font-size: 14px;
+    font-size: 1rem; }
+
+/*
+
+Content--meta
+-------------------------
+- Hidden content
+
+*/
+.Content--meta {
+  display: none; }
+
+/*
+
+Content--focus
+-------------------------
+- Centered text/alignement
+
+*/
+.Content--focus {
+  text-align: center; }
+
+/*
+
+Content--debug
+-------------------------
+- Add border and background to child elements to see where they are
+
+*/
+.Content--debug {
+  background: #EEE; }
+  .Content--debug > * {
+    background: #CCC;
+    border: 1px solid black; }
+    .Content--debug > * > * {
+      background: #999;
+      border: 1px solid #333; }
+
+/*
+
+Content-region
+-------------------------
+- A relative positioning hook
+
+*/
+.Content-region {
+  width: auto;
+  position: relative; }
+
+/*
+
+Content-body
+-------------------------
+- Pad an area
+
+*/
+.Content-body {
+  padding: 10px; }
+
+/*
+
+Content-section
+-------------------------
+- Double base padding below
+
+*/
+.Content-section {
+  margin-bottom: 20px; }
+  .Content-section.Content-section--alpha {
+    margin-bottom: 40px; }
+  .Content-section:last-child {
+    margin-bottom: 0; }
+
+/*
+
+Content-item
+-------------------------
+- Single base padding below
+
+*/
+.Content-item {
+  margin-bottom: 10px; }
+  .Content-item:last-child {
+    margin-bottom: 0; }
+
+/*
+
+Content-group (Grid)
+-------------------------
+- Put content items inside a content group to create a grid layout rapidly
+- Modify the items to adjust their size
+  --alpha 2/3rds
+  --beta 1/2
+  --gamma 1/3rd
+  --delta 1/4
+
+
+*/
+.Content-group {
+  /* Different size items */
+  /* Anything without a modifier will be 100% */ }
+  .Content-group .Content-item--alpha {
+    width: 66.66666%; }
+    @media (max-width: 745px) {
+      .Content-group .Content-item--alpha {
+        width: 100%; } }
+  .Content-group .Content-item--beta {
+    width: 50%; }
+    @media (max-width: 745px) {
+      .Content-group .Content-item--beta {
+        width: 50%; } }
+  .Content-group .Content-item--gamma {
+    width: 33.33333%; }
+    @media (max-width: 745px) {
+      .Content-group .Content-item--gamma {
+        width: 50%; } }
+  .Content-group .Content-item--delta {
+    width: 25%; }
+    @media (max-width: 745px) {
+      .Content-group .Content-item--delta {
+        width: 50%; } }
+
+.Dialog {
+  color: #FFF;
+  background: #000;
+  width: 60%;
+  max-width: 700px; }
+  .Dialog a {
+    color: #FFF; }
+  @media (max-width: 745px) {
+    .Dialog {
+      width: 90%; } }
+
+.Dialog-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  padding: 10px 20px;
+  z-index: 5; }
+
+.Dialog-body {
+  padding: 30px; }
+
+/** @define Overlay */
+/**
+ * Base overlay component
+ */
+.Overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.85);
+  /* Fade-Out Effect */ }
+  .Overlay.Overlay--lightbox {
+    position: fixed;
+    z-index: 9999; }
+  .Overlay.is-active {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transition: opacity 0.3s ease;
+            transition: opacity 0.3s ease; }
+  .Overlay.is-inactive {
+    visibility: visible;
+    pointer-events: none;
+    opacity: 0;
+    top: -9999px;
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: visibility 0s 0.4s, top 0s 0.4s,height 0s 0.4s, opacity 0.4s ease;
+            transition: visibility 0s 0.4s, top 0s 0.4s,height 0s 0.4s, opacity 0.4s ease; }
+
+.Overlay-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  padding: 10px 20px;
+  z-index: 5; }
+
+.Overlay-page {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0; }
+
+.Overlay-content {
+  display: block; }
+
+/** @define Site */
+/**
+ * Base site component
+ */
+.Site {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  overflow: hidden; }
+  .Site body {
+    height: 100%;
+    min-height: 100%;
+    position: relative; }
+
+.Site-page, .Site-body {
+  height: 100%;
+  overflow-y: visible;
+  min-height: 100%;
+  position: relative; }
+
+.Site.when-Overlay-is-active {
+  overflow: hidden; }
+
+/** @define Template */
+/**
+ * Base template component
+ */
+/** @define Uploader */
+/**
+ * Base uploader component
+ */
+.Uploader-body {
+  text-align: center; }
+
+/* The MIT License */
+.Uploader,
+.Uploader *,
+.dropzone-previews,
+.dropzone-previews * {
+  box-sizing: border-box; }
+
+.Uploader {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1em; }
+
+.Uploader.dz-clickable {
+  cursor: pointer; }
+
+.Uploader.dz-clickable .dz-message,
+.Uploader.dz-clickable .dz-message span {
+  cursor: pointer; }
+
+.Uploader.dz-clickable * {
+  cursor: default; }
+
+.Uploader .dz-message {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none; }
+
+.Uploader.dz-drag-hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.04); }
+
+.Uploader.dz-started .dz-message {
+  display: none; }
+
+.Uploader .dz-preview,
+.dropzone-previews .dz-preview {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  display: inline-block;
+  margin: 17px;
+  vertical-align: top;
+  border: 1px solid #acacac;
+  padding: 6px 6px 6px 6px; }
+
+.Uploader .dz-preview.dz-file-preview [data-dz-thumbnail],
+.dropzone-previews .dz-preview.dz-file-preview [data-dz-thumbnail] {
+  display: none; }
+
+.Uploader .dz-preview .dz-details,
+.dropzone-previews .dz-preview .dz-details {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: #ebebeb;
+  padding: 5px;
+  margin-bottom: 22px; }
+
+.Uploader .dz-preview .dz-details .dz-filename,
+.dropzone-previews .dz-preview .dz-details .dz-filename {
+  overflow: hidden;
+  height: 100%; }
+
+.Uploader .dz-preview .dz-details img,
+.dropzone-previews .dz-preview .dz-details img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px; }
+
+.Uploader .dz-preview .dz-details .dz-size,
+.dropzone-previews .dz-preview .dz-details .dz-size {
+  position: absolute;
+  bottom: -28px;
+  left: 3px;
+  height: 28px;
+  line-height: 28px; }
+
+.Uploader .dz-preview.dz-error .dz-error-mark,
+.dropzone-previews .dz-preview.dz-error .dz-error-mark {
+  display: block; }
+
+.Uploader .dz-preview.dz-success .dz-success-mark,
+.dropzone-previews .dz-preview.dz-success .dz-success-mark {
+  display: block; }
+
+.Uploader .dz-preview:hover .dz-details img,
+.dropzone-previews .dz-preview:hover .dz-details img {
+  display: none; }
+
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark,
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  right: -10px;
+  top: -10px; }
+
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark {
+  color: #8cc657; }
+
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+  color: #ee162d; }
+
+.Uploader .dz-preview .dz-progress,
+.dropzone-previews .dz-preview .dz-progress {
+  position: absolute;
+  top: 100px;
+  left: 6px;
+  right: 6px;
+  height: 6px;
+  background: #d7d7d7;
+  display: none; }
+
+.Uploader .dz-preview .dz-progress .dz-upload,
+.dropzone-previews .dz-preview .dz-progress .dz-upload {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: #8cc657; }
+
+.Uploader .dz-preview.dz-processing .dz-progress,
+.dropzone-previews .dz-preview.dz-processing .dz-progress {
+  display: block; }
+
+.Uploader .dz-preview .dz-error-message,
+.dropzone-previews .dz-preview .dz-error-message {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  background: rgba(245, 245, 245, 0.8);
+  padding: 8px 10px;
+  color: #800;
+  min-width: 140px;
+  max-width: 500px;
+  z-index: 500; }
+
+.Uploader .dz-preview:hover.dz-error .dz-error-message,
+.dropzone-previews .dz-preview:hover.dz-error .dz-error-message {
+  display: block; }
+
+/* DROPZONE */
+/* The MIT License */
+.Uploader,
+.Uploader *,
+.dropzone-previews,
+.dropzone-previews * {
+  box-sizing: border-box; }
+
+.Uploader {
+  position: relative;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  padding: 1em; }
+
+.Uploader.dz-clickable {
+  cursor: pointer; }
+
+.Uploader.dz-clickable .dz-message,
+.Uploader.dz-clickable .dz-message span {
+  cursor: pointer; }
+
+.Uploader.dz-clickable * {
+  cursor: default; }
+
+.Uploader .dz-message {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none; }
+
+.Uploader.dz-drag-hover {
+  border-color: rgba(0, 0, 0, 0.15);
+  background: rgba(0, 0, 0, 0.04); }
+
+.Uploader.dz-started .dz-message {
+  display: none; }
+
+.Uploader .dz-preview,
+.dropzone-previews .dz-preview {
+  background: rgba(255, 255, 255, 0.8);
+  position: relative;
+  display: inline-block;
+  margin: 17px;
+  vertical-align: top;
+  border: 1px solid #acacac;
+  padding: 6px 6px 6px 6px; }
+
+.Uploader .dz-preview.dz-file-preview [data-dz-thumbnail],
+.dropzone-previews .dz-preview.dz-file-preview [data-dz-thumbnail] {
+  display: none; }
+
+.Uploader .dz-preview .dz-details,
+.dropzone-previews .dz-preview .dz-details {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  background: #ebebeb;
+  padding: 5px;
+  margin-bottom: 22px; }
+
+.Uploader .dz-preview .dz-details .dz-filename,
+.dropzone-previews .dz-preview .dz-details .dz-filename {
+  overflow: hidden;
+  height: 100%; }
+
+.Uploader .dz-preview .dz-details img,
+.dropzone-previews .dz-preview .dz-details img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100px;
+  height: 100px; }
+
+.Uploader .dz-preview .dz-details .dz-size,
+.dropzone-previews .dz-preview .dz-details .dz-size {
+  position: absolute;
+  bottom: -28px;
+  left: 3px;
+  height: 28px;
+  line-height: 28px; }
+
+.Uploader .dz-preview.dz-error .dz-error-mark,
+.dropzone-previews .dz-preview.dz-error .dz-error-mark {
+  display: block; }
+
+.Uploader .dz-preview.dz-success .dz-success-mark,
+.dropzone-previews .dz-preview.dz-success .dz-success-mark {
+  display: block; }
+
+.Uploader .dz-preview:hover .dz-details img,
+.dropzone-previews .dz-preview:hover .dz-details img {
+  display: none; }
+
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark,
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+  display: none;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  font-size: 30px;
+  text-align: center;
+  right: -10px;
+  top: -10px; }
+
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark {
+  color: #8cc657; }
+
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+  color: #ee162d; }
+
+.Uploader .dz-preview .dz-progress,
+.dropzone-previews .dz-preview .dz-progress {
+  position: absolute;
+  top: 100px;
+  left: 6px;
+  right: 6px;
+  height: 6px;
+  background: #d7d7d7;
+  display: none; }
+
+.Uploader .dz-preview .dz-progress .dz-upload,
+.dropzone-previews .dz-preview .dz-progress .dz-upload {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  background-color: #8cc657; }
+
+.Uploader .dz-preview.dz-processing .dz-progress,
+.dropzone-previews .dz-preview.dz-processing .dz-progress {
+  display: block; }
+
+.Uploader .dz-preview .dz-error-message,
+.dropzone-previews .dz-preview .dz-error-message {
+  display: none;
+  position: absolute;
+  top: -5px;
+  left: -20px;
+  background: rgba(245, 245, 245, 0.8);
+  padding: 8px 10px;
+  color: #800;
+  min-width: 140px;
+  max-width: 500px;
+  z-index: 500; }
+
+.Uploader .dz-preview:hover.dz-error .dz-error-message,
+.dropzone-previews .dz-preview:hover.dz-error .dz-error-message {
+  display: block; }
+
+.Uploader {
+  border: 1px solid rgba(0, 0, 0, 0.03);
+  min-height: 360px;
+  border-radius: 3px;
+  background: rgba(0, 0, 0, 0.03);
+  padding: 23px; }
+
+.Uploader .dz-default.dz-message {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out;
+  position: absolute;
+  width: 428px;
+  height: 123px;
+  margin-left: -214px;
+  margin-top: -61.5px;
+  top: 50%;
+  left: 50%;
+  display: table;
+  vertical-align: middle;
+  text-align: center; }
+
+.Uploader .dz-default.dz-message span {
+  display: table-cell;
+  vertical-align: middle;
+  width: 100%;
+  height: 100%;
+  text-transform: uppercase; }
+
+.Uploader.dz-square .dz-default.dz-message {
+  background-position: 0 -123px;
+  width: 268px;
+  margin-left: -134px;
+  height: 174px;
+  margin-top: -87px; }
+
+.Uploader.dz-drag-hover .dz-message {
+  opacity: 0.15;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=15)";
+  filter: alpha(opacity=15); }
+
+.Uploader.dz-started .dz-message {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0); }
+
+.Uploader .dz-preview,
+.dropzone-previews .dz-preview {
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.16);
+  font-size: 14px; }
+
+.Uploader .dz-preview.dz-image-preview:hover .dz-details img,
+.dropzone-previews .dz-preview.dz-image-preview:hover .dz-details img {
+  display: block;
+  opacity: 0.1;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=10)";
+  filter: alpha(opacity=10); }
+
+.Uploader .dz-preview.dz-success .dz-success-mark,
+.dropzone-previews .dz-preview.dz-success .dz-success-mark {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none; }
+
+.Uploader .dz-preview.dz-error .dz-error-mark,
+.dropzone-previews .dz-preview.dz-error .dz-error-mark {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none; }
+
+.Uploader .dz-preview.dz-error .dz-progress .dz-upload,
+.dropzone-previews .dz-preview.dz-error .dz-progress .dz-upload {
+  background: #ee1e2d; }
+
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark,
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out;
+  background-image: url("/_core/img/uploader/spritemap.png");
+  background-repeat: no-repeat; }
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.4375), (min-resolution: 138dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .Uploader .dz-preview .dz-error-mark,
+  .dropzone-previews .dz-preview .dz-error-mark,
+  .Uploader .dz-preview .dz-success-mark,
+  .dropzone-previews .dz-preview .dz-success-mark {
+    background-image: url("/_core/img/uploader/spritemap@2x.png");
+    background-size: 428px 406px; } }
+.Uploader .dz-preview .dz-error-mark span,
+.dropzone-previews .dz-preview .dz-error-mark span,
+.Uploader .dz-preview .dz-success-mark span,
+.dropzone-previews .dz-preview .dz-success-mark span {
+  display: none; }
+
+.Uploader .dz-preview .dz-error-mark,
+.dropzone-previews .dz-preview .dz-error-mark {
+  background-position: -268px -123px; }
+
+.Uploader .dz-preview .dz-success-mark,
+.dropzone-previews .dz-preview .dz-success-mark {
+  background-position: -268px -163px; }
+
+.Uploader .dz-preview .dz-progress .dz-upload,
+.dropzone-previews .dz-preview .dz-progress .dz-upload {
+  -webkit-animation: loading 0.4s linear infinite;
+  animation: loading 0.4s linear infinite;
+  -webkit-transition: width 0.3s ease-in-out;
+  transition: width 0.3s ease-in-out;
+  border-radius: 2px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-image: url("/_core/img/uploader/spritemap.png");
+  background-repeat: repeat-x;
+  background-position: 0px -400px; }
+
+@media all and (-webkit-min-device-pixel-ratio: 1.5), (min--moz-device-pixel-ratio: 1.5), (min-device-pixel-ratio: 1.5), (-webkit-min-device-pixel-ratio: 1.4375), (min-resolution: 138dpi), (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 1.5dppx) {
+  .Uploader .dz-preview .dz-progress .dz-upload,
+  .dropzone-previews .dz-preview .dz-progress .dz-upload {
+    background-image: url("/_core/img/uploader/spritemap@2x.png");
+    background-size: 428px 406px; } }
+.Uploader .dz-preview.dz-success .dz-progress,
+.dropzone-previews .dz-preview.dz-success .dz-progress {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.4s ease-in-out;
+  transition: opacity 0.4s ease-in-out; }
+
+.Uploader .dz-preview .dz-error-message,
+.dropzone-previews .dz-preview .dz-error-message {
+  display: block;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: opacity 0.3s ease-in-out;
+  transition: opacity 0.3s ease-in-out; }
+
+.Uploader .dz-preview:hover.dz-error .dz-error-message,
+.dropzone-previews .dz-preview:hover.dz-error .dz-error-message {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none; }
+
+.Uploader a.dz-remove,
+.dropzone-previews a.dz-remove {
+  background-image: -webkit-linear-gradient(top, #fafafa, #eee);
+  background-image: linear-gradient(to bottom, #fafafa, #eee);
+  border-radius: 2px;
+  border: 1px solid #eee;
+  text-decoration: none;
+  display: block;
+  padding: 4px 5px;
+  text-align: center;
+  color: #aaa;
+  margin-top: 26px; }
+
+.Uploader a.dz-remove:hover,
+.dropzone-previews a.dz-remove:hover {
+  color: #666; }
+@-webkit-keyframes loading {
+  from {
+    background-position: 0 -400px; }
+  to {
+    background-position: -7px -400px; } }
+@keyframes loading {
+  from {
+    background-position: 0 -400px; }
+  to {
+    background-position: -7px -400px; } }
+/** @define Video */
+/**
+ * Base video component
+ */
+/**
+ * JS Components (do these first so they can be overridden)
+ */
+.ui-clickable--handled {
+  cursor: pointer; }
+
+/** @define ui-filterable */
+/**
+ * ui-filterable
+ *
+ * 
+ */
+.ui-filterable.is-inactive {
+  display: none; }
+
+/** @define ui-isVisible */
+/**
+ * ui-isVIsible
+ *
+ * 
+ */
+.csstransforms3d.csstransitions .ui-isVisible {
+  -webkit-transition: opacity 1.3s cubic-bezier(0.19, 1, 0.22, 1), -webkit-transform 1.3s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: opacity 1.3s cubic-bezier(0.19, 1, 0.22, 1), transform 1.3s cubic-bezier(0.19, 1, 0.22, 1); }
+  .csstransforms3d.csstransitions .ui-isVisible.ui-isVisible--invisible {
+    -webkit-transform: translate3d(0, 70px, 0);
+            transform: translate3d(0, 70px, 0);
+    opacity: 0.3; }
+  .csstransforms3d.csstransitions .ui-isVisible.ui-isVisible--visible {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+    opacity: 1; }
+
+/** @define ui-keepRatio */
+/**
+ * ui-keepRatio
+ *
+ * 
+ */
+.ui-keepRatio {
+  display: block;
+  width: auto;
+  position: relative; }
+
+.ui-keepRatio > * {
+  display: block;
+  width: 100%;
+  height: 100%; }
+
+.ui-keepRatio img {
+  min-height: 100%; }
+
+/** @define ui-keepRatio */
+/**
+ * ui-lazyImage
+ *
+ * 
+ */
+.ui-lazyImage {
+  background: #DDD; }
+
+.ui-lazyImage img {
+  display: block;
+  width: 100%;
+  height: auto; }
+
+.ui-listMenu {
+  height: 100%; }
+
+.ui-listMenuButton {
+  width: 20px;
+  height: 80px;
+  display: block;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  overflow: hidden;
+  padding-top: 10px;
+  z-index: 300; }
+  .ui-listMenuButton .line {
+    display: block;
+    height: 3px;
+    width: 100%;
+    background-color: #eee;
+    margin-top: 8px;
+    position: absolute; }
+
+.ui-listMenuContent {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  top: 0;
+  left: 0; }
+
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr; }
+
+.royalSlider > * {
+  float: left; }
+
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0); }
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden; }
+
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none; }
+
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer; }
+
+.rsThumb {
+  float: left;
+  position: relative; }
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear; }
+
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear; }
+
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important; }
+
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  transition: 0s;
+  display: none; }
+
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto; }
+
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.rsPreloader {
+  position: absolute;
+  z-index: 0; }
+
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none; }
+
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25); }
+
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 22; }
+
+.rsTabs {
+  float: left;
+  background: none !important; }
+
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative; }
+
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s; }
+
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1; }
+
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  box-sizing: border-box;
+  padding-right: 44px; }
+
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15; }
+
+img.rsImg {
+  max-width: none; }
+
+.grab-cursor {
+  cursor: url(grab.png) 8 8, move; }
+
+.grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move; }
+
+.rsNoDrag {
+  cursor: auto; }
+
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url(blank.gif); }
+
+/** @define ui-session */
+/**
+ * ui-session
+ *
+ * 
+ */
+.ui-session--loggedOut .ui-session-item--loggedIn {
+  display: none; }
+
+.ui-session--loggedIn .ui-session-item--loggedOut {
+  display: none; }
+
+/** @define ui-showOnLoad */
+/**
+ * ui-showOnLoad
+ *
+ * 
+ */
+/* Loaded transition */
+.js .ui-showOnLoad {
+  -webkit-transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+          transition: opacity 1.2s cubic-bezier(0.19, 1, 0.22, 1);
+  opacity: 0; }
+.js.Site--loaded .ui-showOnLoad.show {
+  opacity: 1; }
+
+/** @define ui-video */
+/**
+ * ui-video
+ *
+ * 
+ */
+.ui-video {
+  position: relative; }
+
+.ui-video-player {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr; }
+
+.royalSlider > * {
+  float: left; }
+
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0); }
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden; }
+
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none; }
+
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer; }
+
+.rsThumb {
+  float: left;
+  position: relative; }
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear; }
+
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear; }
+
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important; }
+
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  transition: 0s;
+  display: none; }
+
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto; }
+
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.rsPreloader {
+  position: absolute;
+  z-index: 0; }
+
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none; }
+
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25); }
+
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 22; }
+
+.rsTabs {
+  float: left;
+  background: none !important; }
+
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative; }
+
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s; }
+
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1; }
+
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  box-sizing: border-box;
+  padding-right: 44px; }
+
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15; }
+
+img.rsImg {
+  max-width: none; }
+
+.grab-cursor {
+  cursor: url(grab.png) 8 8, move; }
+
+.grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move; }
+
+.rsNoDrag {
+  cursor: auto; }
+
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url(blank.gif); }
+
+/**
+ * Components
+ */
+/* No files to import found in utils/* */
+/** @define Content
+
+  Handy hooks for giving things spacing based on $base-padding. Defined in core.
+
+  .Content: relative
+  .Content--meta: hidden
+  .Content--focus: centered
+  .Content--debug: coloured and bordered
+
+  .Content-region: relative auto width
+  .Content-body: has base padding
+  .Content-section: double base padding below (good for separating bigger sections)
+  .Content-item: single base padding below (good for lists)
+  .Content-group: grid
+    ->
+    .Content-item: column
+    .Content-item--alpha: 2/3rds column
+    .Content-item--beta: 1/2 column
+    .Content-item--gamma: 1/3rd column
+    .Content-item--delta: 1/4rd column
+
+*/
+/**
+ * Content
+ */
+@media (max-width: 745px) {
+  .Content p {
+    margin-bottom: 0;
+    margin-top: 20px; } }
+.Content .Content-section {
+  width: 33.333%; }
+  @media (min-width: 746px) and (max-width: 1023px) {
+    .Content .Content-section.Content-section--empty {
+      display: none; }
+    .Content .Content-section.Content-section--about {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .Content .Content-section.Content-section--contact {
+      padding-right: 20px;
+      padding-left: 20px; }
+    .Content .Content-section.Content-section--social {
+      padding-right: 20px;
+      padding-left: 20px; } }
+  @media (min-width: 746px) and (max-width: 1023px) {
+    .Content .Content-section {
+      width: 50%; } }
+.Content .Content-body {
+  border-top: 1px #9D9C9C solid;
+  margin-right: 60px;
+  padding: 24px 0 0 0; }
+  @media (min-width: 746px) and (max-width: 1023px) {
+    .Content .Content-body {
+      margin-right: 0; } }
+.Content .Content-section--social {
+  border-top: 0;
+  padding-left: 7px; }
+  .Content .Content-section--social .Content-body {
+    border-top: 0; }
+    .Content .Content-section--social .Content-body p {
+      color: #9D9C9C;
+      line-height: 0; }
+.Content .Content-tabs {
+  text-align: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto; }
+  .Content .Content-tabs li {
+    display: inline-block;
+    line-height: 12px; }
+    .Content .Content-tabs li a {
+      color: #9D9C9C; }
+    .Content .Content-tabs li:first-child {
+      padding-right: 10px;
+      border-right: 1px #9D9C9C solid; }
+    .Content .Content-tabs li:last-child {
+      padding-left: 10px; }
+    .Content .Content-tabs li a.active {
+      color: white;
+      text-decoration: underline; }
+      .Content .Content-tabs li a.active:after {
+        content: " ";
+        width: 1px;
+        height: 10px;
+        background-color: #9D9C9C; }
+.Content .Content-tab {
+  text-align: center;
+  padding: 0;
+  padding-bottom: 20px; }
+  .Content .Content-tab a {
+    display: block; }
+.Content.Content--body-mobile {
+  display: none; }
+  @media (max-width: 745px) {
+    .Content.Content--body-mobile {
+      display: block;
+      width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+      padding: 0; }
+      .Content.Content--body-mobile .Content-tab--about {
+        text-align: left;
+        padding: 0 15px; } }
+.Content.Content--body-desktop {
+  display: block; }
+  @media (max-width: 745px) {
+    .Content.Content--body-desktop {
+      display: none; } }
+
+/** @define Item */
+/**
+ * Item
+ */
+/**
+ * Item media
+ */
+/**
+ * Item head
+ */
+/**
+ * Item body
+ */
+/**
+ * Item section
+ */
+/**
+ * Item section
+ */
+/**
+ * Item foot
+ */
+/** @define List */
+/** @define Overlay */
+/**
+ * Base overlay component
+ */
+.Overlay {
+  position: fixed;
+  margin-right: 40px;
+  margin-left: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: black !important;
+  width: 200px;
+  height: 40px;
+  background: black;
+  -webkit-transition: all 0.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: all 0.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 10; }
+  @media (max-width: 745px) {
+    .Overlay {
+      width: 133px; } }
+  .Overlay .Overlay-page, .Overlay .Overlay-foot {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
+  .Overlay a {
+    font-size: 14px; }
+  .when-Site-is-active .Overlay {
+    width: calc(100% - 80px);
+    top: 0 !important;
+    height: calc(100% - 40px);
+    -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+            transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
+    .when-Site-is-active .Overlay .Overlay-page, .when-Site-is-active .Overlay .Overlay-foot {
+      opacity: 1;
+      -webkit-transition: opacity 0.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+              transition: opacity 0.5s 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
+
+.Overlay-head {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  text-align: right;
+  padding: 12px 20px;
+  z-index: 99999999; }
+  @media (max-width: 745px) {
+    .Overlay-head {
+      display: none; } }
+  .Overlay-head .Overlay-listItem {
+    width: 33.333%;
+    display: inline-block; }
+    @media (min-width: 746px) and (max-width: 1023px) {
+      .Overlay-head .Overlay-listItem {
+        width: 50%;
+        display: block;
+        margin-left: 50%;
+        padding-left: 20px; } }
+    .Overlay-head .Overlay-listItem.Overlay-listItem--telephone {
+      padding-left: 20px; }
+
+.Overlay-page {
+  position: absolute;
+  z-index: 4;
+  top: 0;
+  left: 0; }
+
+.Overlay-body {
+  vertical-align: top;
+  padding-top: 200px; }
+  @media (max-width: 745px) {
+    .Overlay-body {
+      padding-top: 45px; } }
+
+.Overlay-content {
+  max-width: 6000000px;
+  display: block; }
+  .Overlay-content p {
+    color: white; }
+
+.Overlay-foot {
+  width: 100%;
+  border: 0;
+  position: absolute;
+  bottom: 40px;
+  left: 0;
+  z-index: 10000; }
+
+.Overlay-listItem--tagLine {
+  color: white; }
+  .Overlay-listItem--tagLine p {
+    width: 200px; }
+
+/** @define Site */
+/**
+ * Site structure
+ *
+ * Top level architecture.
+ */
+.Site {
+  font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  opacity: 0;
+  -webkit-transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+          transition: opacity 0.5s cubic-bezier(0.23, 1, 0.32, 1); }
+  .Site.show {
+    opacity: 1; }
+  .Site strong {
+    color: #9D9C9C;
+    font-family: "Maison Neue Medium", Calibri, Arial, Roboto, sans-serif;
+    font-weight: 500;
+    font-style: normal; }
+    @media (max-width: 745px) {
+      .Site strong {
+        font-size: 11.2px; } }
+  .Site a {
+    color: white; }
+  .Site .Site-head .Site-logo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-left: 40px;
+    z-index: 9999999999; }
+    .Site .Site-head .Site-logo a {
+      color: white; }
+    .Site .Site-head .Site-logo h1 {
+      font-size: 14px;
+      color: white;
+      padding: 11px 80px 11px 20px; }
+  .Site .Site-overlay {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    background-color: #575756;
+    position: fixed;
+    z-index: 9999999999;
+    -webkit-transition: all 0.3s linear;
+            transition: all 0.3s linear; }
+    .Site .Site-overlay img {
+      width: 14px;
+      height: 14px;
+      display: block;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-left: -7px;
+      margin-top: -7px;
+      -webkit-transition: all .3s;
+              transition: all .3s; }
+  .Site .Site-overlay.is-active img {
+    -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+    -webkit-transform-origin: 50% 50%;
+        -ms-transform-origin: 50% 50%;
+            transform-origin: 50% 50%;
+    -webkit-transition: all .3s;
+            transition: all .3s; }
+
+/** @define Slider */
+.rsOverflow {
+  cursor: default !important; }
+
+.Slider {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: auto;
+  height: auto;
+  z-index: 0; }
+  @media (max-width: 745px) {
+    .Slider {
+      overflow: visible;
+      z-index: 0; }
+      .Slider + div {
+        z-index: 1; } }
+  .Slider.Slider-desktop {
+    display: block; }
+    @media (max-width: 745px) {
+      .Slider.Slider-desktop {
+        display: none; } }
+    @media (max-width: 745px) and (orientation: landscape) {
+      .Slider.Slider-desktop {
+        display: block; } }
+  .Slider.Slider-mobile {
+    display: none; }
+    @media (max-width: 745px) {
+      .Slider.Slider-mobile {
+        display: block; } }
+    @media (max-width: 745px) and (orientation: landscape) {
+      .Slider.Slider-mobile {
+        display: none; } }
+
+.Slider-body {
+  height: 100%; }
+
+.Slider-section {
+  position: relative;
+  overflow: hidden; }
+
+/* v1.0.5 */
+/* Core RS CSS file. 95% of time you shouldn't change anything here. */
+.royalSlider {
+  width: 600px;
+  height: 400px;
+  position: relative;
+  direction: ltr; }
+
+.royalSlider > * {
+  float: left; }
+
+.rsWebkit3d .rsSlide {
+  -webkit-transform: translateZ(0); }
+
+.rsWebkit3d .rsSlide,
+.rsWebkit3d .rsContainer,
+.rsWebkit3d .rsThumbs,
+.rsWebkit3d .rsPreloader,
+.rsWebkit3d img,
+.rsWebkit3d .rsOverflow,
+.rsWebkit3d .rsBtnCenterer,
+.rsWebkit3d .rsAbsoluteEl,
+.rsWebkit3d .rsABlock,
+.rsWebkit3d .rsLink {
+  -webkit-backface-visibility: hidden; }
+
+.rsFade.rsWebkit3d .rsSlide,
+.rsFade.rsWebkit3d img,
+.rsFade.rsWebkit3d .rsContainer {
+  -webkit-transform: none; }
+
+.rsOverflow {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  left: 0;
+  top: 0;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVisibleNearbyWrap .rsOverflow {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
+.rsContainer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsArrow,
+.rsThumbsArrow {
+  cursor: pointer; }
+
+.rsThumb {
+  float: left;
+  position: relative; }
+
+.rsArrow,
+.rsNav,
+.rsThumbsArrow {
+  opacity: 1;
+  -webkit-transition: opacity 0.3s linear;
+  transition: opacity 0.3s linear; }
+
+.rsHidden {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: visibility 0s linear 0.3s,opacity 0.3s linear;
+  transition: visibility 0s linear 0.3s,opacity 0.3s linear; }
+
+.rsGCaption {
+  width: 100%;
+  float: left;
+  text-align: center; }
+
+/* Fullscreen options, very important ^^ */
+.royalSlider.rsFullscreen {
+  position: fixed !important;
+  height: auto !important;
+  width: auto !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  z-index: 2147483647 !important;
+  top: 0 !important;
+  left: 0 !important;
+  bottom: 0 !important;
+  right: 0 !important; }
+
+.royalSlider .rsSlide.rsFakePreloader {
+  opacity: 1 !important;
+  -webkit-transition: 0s;
+  transition: 0s;
+  display: none; }
+
+.rsSlide {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: block;
+  overflow: hidden;
+  height: 100%;
+  width: 100%; }
+
+.royalSlider.rsAutoHeight,
+.rsAutoHeight .rsSlide {
+  height: auto; }
+
+.rsContent {
+  width: 100%;
+  height: 100%;
+  position: relative; }
+
+.rsPreloader {
+  position: absolute;
+  z-index: 0; }
+
+.rsNav {
+  -moz-user-select: -moz-none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+      user-select: none; }
+
+.rsNavItem {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0.25); }
+
+.rsThumbs {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  float: left;
+  z-index: 22; }
+
+.rsTabs {
+  float: left;
+  background: none !important; }
+
+.rsTabs,
+.rsThumbs {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent; }
+
+.rsVideoContainer {
+  /*left: 0;
+  top: 0;
+  position: absolute;*/
+  /*width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  float: left;*/
+  width: auto;
+  height: auto;
+  line-height: 0;
+  position: relative; }
+
+.rsVideoFrameHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #141414;
+  opacity: 0;
+  -webkit-transition: .3s; }
+
+.rsVideoFrameHolder.rsVideoActive {
+  opacity: 1; }
+
+.rsVideoContainer iframe,
+.rsVideoContainer video,
+.rsVideoContainer embed,
+.rsVideoContainer .rsVideoObj {
+  position: absolute;
+  z-index: 50;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%; }
+
+/* ios controls over video bug, shifting video */
+.rsVideoContainer.rsIOSVideo iframe,
+.rsVideoContainer.rsIOSVideo video,
+.rsVideoContainer.rsIOSVideo embed {
+  box-sizing: border-box;
+  padding-right: 44px; }
+
+.rsABlock {
+  left: 0;
+  top: 0;
+  position: absolute;
+  z-index: 15; }
+
+img.rsImg {
+  max-width: none; }
+
+.grab-cursor {
+  cursor: url(grab.png) 8 8, move; }
+
+.grabbing-cursor {
+  cursor: url(grabbing.png) 8 8, move; }
+
+.rsNoDrag {
+  cursor: auto; }
+
+.rsLink {
+  left: 0;
+  top: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  z-index: 20;
+  background: url(blank.gif); }
+
+/** @define Template */
+/**
+ * Template
+ */
+/**
+ * Template media
+ */
+/**
+ * Template head
+ */
+/**
+ * Template body
+ */
+/**
+ * Template section
+ */
+/**
+ * Template section
+ */
+/**
+ * Template foot
+ */
+/**/
