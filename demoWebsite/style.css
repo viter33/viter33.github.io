@@ -17,9 +17,14 @@ color: #fff !important;
 font-size: 2rem !important;
 }
 .center{
-	position: absolute;
+	position: absolute;;
+	width: 200px;
 	color: white;
+	margin-left: -100px;
+	left: 50%;
+	height: 93px;
 	top: 5px;
+	text-align: center;
 	font-size: 1.4rem;
 }
 nav .div{
@@ -161,8 +166,8 @@ padding: 10px !important;
 		left: 0;
 		margin-left: 0;
 	}
-	.center{
-		right: 34px !important;
+	#center{
+		left: 83% !important;
 		text-align: center;
 	}
 	.square{
