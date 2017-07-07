@@ -63,7 +63,7 @@ url: URL,
 	          var image = $(".div-for-img-"+newPage+" img");
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 390) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -113,7 +113,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 390) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -165,7 +165,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 390) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -216,7 +216,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 390) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
