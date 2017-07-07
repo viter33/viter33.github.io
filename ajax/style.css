@@ -1,0 +1,151 @@
+.container-search{
+	text-align: center;
+}
+.search-img{
+text-align: center;
+width: 50%;
+font-size: 23px;
+padding: 8px;
+border-radius: 5px;
+border: 0;
+box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16),0 0 0 1px rgba(0,0,0,0.08);
+transition: box-shadow 200ms cubic-bezier(0.4, 0.0, 0.2, 1);
+text-align: left;
+font-weight: 400;
+background-repeat: no-repeat;
+background-position: right;
+background-size: 53px;
+
+}
+.loader-container{
+text-align: center;
+position: relative;
+top: 25px;
+
+}
+.img-content{
+	text-align: center;
+position: relative;
+top: 10px;
+transition: .5s;
+display: none;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+min-height: 2000px;
+opacity: 0;
+}
+.loader,.load_more_loader{
+width: 70px;
+height: 70px;
+display: none;
+border: 6px dotted #008DDD;
+border-radius: 50%;
+position: absolute;
+left: 50%;
+margin-left: -35px;
+animation: 1s rotate infinite;
+}
+.load_more_loader{
+	margin-bottom: 30px;
+}
+.submit{
+display: inline-block;
+font-size: 34px;
+padding: 3px 12px;
+background: #008DDF;
+color: #fff;
+border-radius: 5px;
+cursor: pointer;
+position: relative;
+top: 1px;
+}
+
+/*img content*/
+.div-for-img{
+position: relative;
+top: 15px;
+text-align: center;
+margin: 0 auto;	
+float: left;
+height: 268px;
+overflow: hidden;
+margin-bottom: 4px;
+margin-right: 4px;
+border-radius: 5px;
+justify-content: center;
+flex-basis: 33%;
+flex-grow: 2;
+
+}
+.my-img{
+width: 100%;
+/*height: auto;*/
+cursor: pointer;
+}
+
+.pagination{
+	margin-top: 30px;
+	margin-bottom: 10px;
+	text-align: center;
+
+}
+/*.pagination ul {
+	text-align: center;
+}
+.pagination ul li{
+display: inline-block;
+font-size: 23px;
+font-weight: 400;
+margin-left: 10px;
+background-color: grey;
+color: #fff;
+cursor: pointer;
+padding: 0 8px;
+}*/
+
+.load_more{
+	cursor: pointer;
+	display: inline-block;
+	font-size: 25px;
+	background: #008DDF;
+	padding: 10px 15px;
+	border-radius: 4px;
+	transition: .5s;
+}
+@keyframes rotate {
+    from {
+    	transform: rotate(0deg);
+    }
+    to {
+    	transform: rotate(360deg);
+    }
+}
+
+@keyframes opac {
+    from {
+    	opacity: 0;
+    }
+    to {
+    	opacity: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+	.div-for-img{
+		height: 170px;
+		flex-basis: 30%;
+}
+}
+
+@media screen and (max-width: 768px) {
+	.div-for-img{
+		height: 170px;
+		flex-basis: 33%;
+}
+}
+
+
+
+
+
