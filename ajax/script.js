@@ -1,8 +1,6 @@
     jQuery(document).ready( function() {
 // sessionStorage.removeItem("page");
-$(".scroll-topp").click(function() {
-	$("html,body").animate({scrollTop: 0}, 1000);
-});
+
   setTimeout(function() { 
 $(".img-content").css('opacity', '1');	
 },2000)
@@ -65,7 +63,7 @@ url: URL,
 	          var image = $(".div-for-img-"+newPage+" img");
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 380) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -115,7 +113,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 380) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -167,7 +165,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 380) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
@@ -218,7 +216,7 @@ url: URL,
 var image = $('.my-img');
     image.each(function () {
         var that = $(this).data('height');
-        if (that < 380) {
+        if (that < 400) {
             $(this).css('height', '100%');
         }
     })
